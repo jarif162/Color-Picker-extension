@@ -1,0 +1,11 @@
+{
+  "name": "colorPickup",
+  "description": "Color picker tool ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Jarif Foysal",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "img.jpg"
+  }
+}
