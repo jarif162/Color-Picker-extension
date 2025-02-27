@@ -5,7 +5,7 @@ const colorList = document.querySelector(".all-colors");
 // const pickedColors = [];
 
 //step 05
-let pickedColors = JSON.parse(localStorage.getItem("picked-colors") || "[]");
+let pickedColors = JSON.parse(localStorage.getItem("picked-colors") || "[]"); //parse convert string to array
 
 //step 01
 const activateEyeDropper = async () => {
@@ -76,7 +76,7 @@ const clearListOfColors = () => {
   // colorList.innerHTML = "";
   //step 06
   pickedColors.length = 0;
-  localStorage.setItem("picked-colors", JSON.stringify(pickedColors));
+  localStorage.setItem("picked-colors", JSON.stringify(pickedColors)); //stringify convert array to string
   document.querySelector(".picked-colors").style.display = "none";
 };
 
